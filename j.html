@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rana Muhammad Aslam | Premium Paint & Wood Polish Specialist</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header / Hero Section */
+        header {
+            background: linear-gradient(rgba(26, 37, 48, 0.9), rgba(26, 37, 48, 0.9)), url('https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            border-bottom: 5px solid #d4af37; /* Gold accent */
+        }
+
+        .logo-placeholder {
+            width: 120px;
+            height: 120px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 2px dashed #d4af37;
+            border-radius: 50%;
+            margin: 0 auto 20px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            color: #d4af37;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.3rem;
+            color: #d4af37;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Experience Tag */
+        .badge {
+            background-color: #d4af37;
+            color: #1a2530;
+            padding: 8px 20px;
+            font-weight: bold;
+            border-radius: 50px;
+            display: inline-block;
+            margin-top: 15px;
+            font-size: 1.1rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .intro-text {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 50px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Services Section */
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+            color: #1a2530;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: #d4af37;
+            margin: 10px auto 0 auto;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .service-box {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-top: 4px solid #1a2530;
+            transition: transform 0.3s ease;
+        }
+
+        .service-box:hover {
+            transform: translateY(-5px);
+            border-top-color: #d4af37;
+        }
+
+        .service-box h3 {
+            color: #1a2530;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+
+        .service-box ul {
+            list-style-type: none;
+        }
+
+        .service-box ul li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 20px;
+            color: #555;
+        }
+
+        .service-box ul li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #d4af37;
+            font-weight: bold;
+        }
+
+        /* Why Choose Us */
+        .features {
+            background-color: #1a2530;
+            color: white;
+            padding: 60px 40px;
+            border-radius: 8px;
+            margin-bottom: 60px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            text-align: center;
+        }
+
+        .feature-item h4 {
+            color: #d4af37;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        /* Footer / Contact */
+        footer {
+            background-color: #111;
+            color: #aaa;
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 0.9rem;
+        }
+
+        .contact-btn {
+            background-color: #d4af37;
+            color: #1a2530;
+            padding: 12px 35px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 4px;
+            display: inline-block;
+            margin: 20px 0;
+            transition: background 0.3s;
+            font-size: 1.1rem;
+        }
+
+        .contact-btn:hover {
+            background-color: #fff;
+            color: #1a2530;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <!-- Place your attached logo inside this div later -->
+        <div class="logo-placeholder">
+            [ Insert Logo Here ]
+        </div>
+        <h1>Rana Muhammad Aslam</h1>
+        <p>Master Artisan in Wood Polish & House Paint</p>
+        <div class="badge">30+ Years of Professional Experience</div>
+    </header>
+
+    <div class="container">
+        <!-- Introduction -->
+        <p class="intro-text">
+            Bringing three decades of unmatched craftsmanship, precision, and dedication to your spaces. Whether it is restoring the timeless elegance of premium wood or transforming your home with flawless paint finishes, we deliver perfection that lasts.
+        </p>
+
+        <!-- Services -->
+        <h2>Our Specialized Services</h2>
+        <div class="services">
+            <!-- Service 1 -->
+            <div class="service-box">
+                <h3>Premium Wood Polishing</h3>
+                <ul>
+                    <li>High-Gloss & Matte Deco Finishes</li>
+                    <li>Traditional & Modern Lacquer Polish</li>
+                    <li>Luxury Furniture Restoration</li>
+                    <li>Doors, Cabinets, & Architectural Woodwork</li>
+                </ul>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service-box">
+                <h3>Professional House Painting</h3>
+                <ul>
+                    <li>Interior & Exterior Premium Painting</li>
+                    <li>Wall Texture & Modern Designer Finishes</li>
+                    <li>Weather-coat & Protective Coatings</li>
+                    <li>Flawless Surface Preparation & Repair</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Highlight Features -->
+        <h2>Why Choose Us?</h2>
+        <div class="features">
+            <div class="feature-item">
+                <h4>30+ Years</h4>
+                <p>Of trusted, hands-on industry expertise</p>
+            </div>
+            <div class="feature-item">
+                <h4>Premium Quality</h4>
+                <p>Only top-tier materials and flawless execution</p>
+            </div>
+            <div class="feature-item">
+                <h4>Reliable & Clean</h4>
+                <p>Punctual timelines and immaculate cleanup</p>
+            </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div style="text-align: center; margin-bottom: 40px;">
+            <h2>Ready to Transform Your Space?</h2>
+            <p style="color: #666; margin-top: 10px;">Get a free consultation and premium quote today.</p>
+            <a href="#" class="contact-btn">Book a Consultation</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Rana Muhammad Aslam. All Rights Reserved. Crafted with Professional Excellence.</p>
+    </footer>
+
+</body>
+</html>
